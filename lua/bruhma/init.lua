@@ -39,9 +39,9 @@ autocmd('BufEnter', {
     group = Bruhma,
     callback = function()
         if vim.bo.filetype == "zig" then
-            vim.cmd.colorscheme("tokyonight-night")
+            vim.cmd.colorscheme("tokyonight")
         else
-            vim.cmd.colorscheme("onedark")
+            vim.cmd.colorscheme("tokyonight")
         end
     end
 })
