@@ -46,6 +46,9 @@ autocmd('BufEnter', {
     end
 })
 
+vim.keymap.set("n", "<leader>cd", function()
+  vim.cmd("cd " .. vim.fn.expand("%:p:h"))
+end, { desc = "Set working directory to path of buffer." })
 
 autocmd('LspAttach', {
     group = Bruhma,
